@@ -12,11 +12,11 @@
   <title>SB Admin 2 - Blank</title>
 
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href={{asset('/sbadmin2/vendor/fontawesome-free/css/all.min.css' rel="stylesheet" type="text/css">)}};
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href={{asset('/sbadmin2/sb-admin-2.min.css' rel="stylesheet">)}};
 
 </head>
 
@@ -392,7 +392,13 @@
 
   <!-- script tambahan sweet alert, bukan dari bawaan sb-admin-2 -->
   @stack('scripts')
-
+  <!-- Bootstrap 4 -->
+  <script src="{{asset('/sbadmin2/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- AdminLTE App -->
+  <script src="{{asset('/sbadmin2/js/js/sb-admin-2.min.js')}}"></script>
+  <script src="{{asset('/sbadmin2/js/js/sb-admin-2.js')}}"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="{{asset('/adminlte/dist/js/demo.js')}}"></script>
   <script src="js/swal.min.js"></script>
 
 </body>
